@@ -1,0 +1,175 @@
+🧠 DN VORTEX AI Study Mate – Full Web App Outline
+🎯 Purpose
+To help students generate personalized AI-powered quizzes, summaries, and study notes from their own material (notes, textbooks, question papers) and track their progress — all in one secure web app.
+
+🔑 Core Features
+1️⃣ Student Authentication & Dashboard
+Firebase/Auth0/Supabase login
+
+Signup/login using email & password or Google
+
+Personal Dashboard includes:
+
+Upload materials (PDF, DOCX, text, images with OCR)
+
+See created quizzes, attempted history, and progress
+
+Download notes/summaries
+
+Resume incomplete quizzes
+
+Track scores & improvement
+
+2️⃣ Admin Panel
+Admin Login (separate secure login)
+
+Admin credentials hardcoded in backend or managed via Firebase roles
+
+Dashboard to manage users, view app activity
+
+Monitor uploads and generated content
+
+Suspend accounts for abuse/misuse
+
+Add custom subjects or modules for all users
+
+3️⃣ Upload & Process Study Material
+Users can:
+
+Upload personal notes, textbooks, or past papers
+
+Paste raw text or type directly
+
+Supported file formats: PDF, DOCX, TXT, JPG/PNG (OCR)
+
+Option to specify subject/module
+
+4️⃣ AI-Powered Material Processing
+💡 Smart Notes/Summary Generator
+
+Auto-generate concise notes based on uploads
+
+Organized by topic & sub-topic
+
+Downloadable (PDF only)
+
+🧾 Quiz/Question Paper Generator
+
+Generate MCQs, True/False, Fill-in-the-Blanks, or SAQs
+
+Option to select:
+
+Difficulty level
+
+Number of questions
+
+Topic focus
+
+AI ensures unique, content-based questions
+
+5️⃣ Quiz Attempt Interface
+Students can only attempt quizzes inside the platform
+
+Real-time quiz UI:
+
+Timer
+
+Question navigation
+
+Submit when done
+
+No download allowed for quizzes
+
+6️⃣ Automated Marking System
+After quiz submission:
+
+AI auto-marks answers
+
+Provides explanations (optional toggle)
+
+Shows final score
+
+Graphical progress over time
+
+7️⃣ Progress Tracking
+Dashboard shows:
+
+Quiz history
+
+Average scores
+
+Time spent studying
+
+Accuracy by topic
+
+Suggested focus areas
+
+8️⃣ Gamified Learning (Optional Add-On)
+Badges for progress
+
+Leaderboards (optional)
+
+Streaks & consistency tracker
+
+9️⃣ Security & Limits
+Prevents quiz leaks:
+
+Quizzes visible only on app
+
+IP/session locking to discourage cheating
+
+Daily generation limits for free users
+
+Optional subscription model for unlimited access
+
+🛠️ Tech Stack
+🔧 Frontend:
+React (w/ Tailwind CSS & Framer Motion for modern animations)
+
+Responsive for mobile and desktop
+
+Dark/Light mode toggle
+
+🔧 Backend:
+Node.js / Flask (for handling quiz generation, AI calls)
+
+Firebase Firestore or Supabase for real-time database
+
+File uploads & parsing: Multer + Tesseract.js (OCR)
+
+🤖 AI Integration:
+OpenAI / Gemini for:
+
+Summarization
+
+Quiz generation
+
+Answer feedback
+
+🔐 Authentication:
+Firebase Auth or Supabase Auth
+
+JWT Token-based security
+
+Admin-only protected routes
+
+📥 Download Functionality
+Notes & Summaries:
+
+Export as PDF
+
+Download button in user dashboard
+
+Quizzes: No downloads – online use only
+
+💰 Optional Monetization
+Freemium model:
+
+Free: Limited uploads/quizzes per day
+
+Premium: Unlimited generation, advanced analytics, priority AI usage
+
+Monthly: $5 / Annual: $50
+
+Stripe integration for payments
+
